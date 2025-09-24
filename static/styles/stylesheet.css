@@ -20,15 +20,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "Basketball";
-    src: url("../fonts/Basketball.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap; /* prevents invisible text while loading */
-}
-
-
 body {
     font-family: "Tahoma";
     color: var(--main);
