@@ -3,6 +3,14 @@
         font-size: 30px !important;
         line-height: 55px !important;
     }
+
+    h2 {
+        font-size: 45px !important;
+    }
+
+    p {
+        font-size: 40px !important;
+    }
 }
 
 :root {
@@ -10,8 +18,8 @@
     --off: #a8a2a0;
     --bg: #161618;
     --pop: #262b45;
-    --ham-menu-height: 25px;
-    --ham-menu-width: 38px;
+    --ham-menu-height: 35px;
+    --ham-menu-width: 50px;
 
     --main-margin: 50px;
 }

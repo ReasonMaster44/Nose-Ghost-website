@@ -8,7 +8,7 @@
     }
 
     #header {
-        height: 150px !important;
+        height: 200px !important;
     }
 
     .social-link {
@@ -42,7 +42,7 @@
 
 #social-links {
     display: flex;
-    gap: 30px;
+    gap: 50px;
 
     position: absolute;
 
@@ -68,7 +68,7 @@
 }
 
 #social-links.active {
-    transform: translateY(-125px);
+    transform: translateY(-155px);
 }
 
 
@@ -76,7 +76,7 @@
     display: flex;
     gap: 50px;
 
-    transform: translateY(-125px) !important;
+    transform: translateY(-155px) !important;
 
     transition: all 0.3s;
 }
