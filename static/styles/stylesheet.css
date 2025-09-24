@@ -1,0 +1,104 @@
+@media only screen and (max-width: 1100px) {
+    body {
+        font-size: 30px !important;
+        line-height: 55px !important;
+    }
+}
+
+:root {
+    --main: #ede5e3;
+    --off: #a8a2a0;
+    --bg: #161618;
+    --pop: #262b45;
+    --ham-menu-height: 25px;
+    --ham-menu-width: 38px;
+
+    --main-margin: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Basketball";
+    src: url("../fonts/Basketball.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* prevents invisible text while loading */
+}
+
+
+body {
+    font-family: "Tahoma";
+    color: var(--main);
+    background-color: var(--bg);
+    margin: 0px;
+    line-height: 25px;
+}
+
+h1 {
+    font-family: "Hoefler Text";
+    font-size: 50px;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+input {
+    all: unset;
+    display: block;
+    border-bottom: 1px solid var(--main);
+}
+
+input::placeholder {
+    color: var(--off);
+}
+
+textarea {
+    all: unset;
+    border: 1px solid var(--main);
+
+    padding: 10px;
+    height: 1000px;
+    resize: vertical;
+}
+
+textarea::placeholder {
+    color: var(--off);
+}
+
+button {
+    all: unset;
+
+    color: var(--bg);
+
+    background-color: var(--off);
+
+    transition: all 0.1s;
+
+    padding: 5px 25px 5px 25px;
+
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: var(--main);
+}
+
+a {
+    color: var(--off);
+
+    transition: all 0.1s;
+}
+
+a:hover {
+    color: var(--main);
+}
+
+.only-mobile {
+    display: none
+}

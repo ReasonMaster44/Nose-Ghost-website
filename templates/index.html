@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/stylesheet.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/navigation.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            referrerpolicy="no-referrer"/>
+
+    </head>
+    <body>
+        <div id="header">
+            <img class="only-mobile" id="ng-logo" src="{{ url_for('static', filename='images/logo-small.png')}}">
+            <img class="only-desktop" id="ng-logo" src="{{ url_for('static', filename='images/logo-large.png')}}">
+            
+            
+            <div id="header-links">
+                <div id="social-and-nav-links">
+                    <div id="social-links">
+                        <a class="social-link fa-brands fa-spotify" href="https://open.spotify.com/artist/0Vqti19iperDl11P2PJm1z?si=ijvsofsWShOaOxQ091EjSA" target="_blank"></a>
+                        <a class="social-link fa-brands fa-itunes-note" href="https://music.apple.com/us/artist/nose-ghost/1755930902" target="_blank"></a>
+                        <a class="social-link fa-brands fa-youtube" href="https://youtube.com/@noseghost-y9d?si=lwpJJ8is0lmZnHGE" target="_blank"></a>
+                        <a class="social-link fa-brands fa-instagram" href="https://www.instagram.com/nose.ghost.band?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"></a>
+                    </div>
+
+                    <nav id="nav-bar">
+                        <a class="nav-item selected"  href="{{ url_for('index')}}">HOME</a>
+                        <a class="nav-item" href="{{ url_for('tour')}}">TOUR</a>
+                        <a class="nav-item" href="{{ url_for('videos')}}">VIDEOS</a>
+                        <a class="nav-item" href="{{ url_for('contact')}}">CONTACT</a>
+                    </nav>
+                </div>
+                
+                
+                <nav id="ham-menu-nav">
+                    <div id="ham-menu">
+                        <span id="ham-layer1"></span>
+                        <span id="ham-layer2"></span>
+                        <span id="ham-layer3"></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <hr>
+        <br>
+        
+        <div id="new-release">
+            <h2>NEW SINGLE OUT NOW</h2>
+            <br>
+            <div id="new-release-image-and-video">
+                <a href="https://open.spotify.com/album/3SJEZyQHqObgt4Y3Ial37B?si=-nLr0t9xTbadtpwG6Iciew" target="_blank"><img id="new-release-image" src="{{ url_for('static', filename='images/anaconda-cover.webp')}}"></a>
+                <iframe id="new-release-yt-embed" src="https://www.youtube.com/embed/p5rTlNHpR_I?si=pF8eDpOid4F7Fi27&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div id="content">
+            <img class="content-image only-desktop" src="{{ url_for('static', filename='images/all-apollo-audio.jpg')}}">
+            
+            <div>
+                <h2>ABOUT</h2>
+                <p>Nose Ghost is a four-piece punk and indie rock project that delivers fuzz-driven, high energy riffs. With scratchy vocals, crunchy guitars and the occasional harmonica, they boast a sound that is both nostalgic and a breath of fresh air. Their goal on stage is to get the crowds moshing and moving.</p>
+            </div>
+        </div>
+
+        
+    </body>
+</html>

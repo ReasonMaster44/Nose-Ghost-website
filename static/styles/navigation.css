@@ -1,0 +1,174 @@
+@media only screen and (max-width: 1100px) {
+    .only-mobile {
+        display: block !important;
+    }
+
+    .only-desktop {
+        display: none !important;
+    }
+
+    #header {
+        height: 150px !important;
+    }
+
+    .social-link {
+        font-size: 50px !important;
+    }
+}
+
+#header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+    margin: 0px var(--main-margin) 0px var(--main-margin);
+    
+    height: 100px;
+}
+
+#header-links {
+    display: flex;
+    gap: 70px;
+
+    position: relative;
+}
+
+#social-and-nav-links {
+    position: relative;
+    right: 30px;
+    display: flex;
+}
+
+#social-links {
+    display: flex;
+    gap: 30px;
+
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    right: 0px;
+
+    transition: all 0.3s;
+}
+
+.social-link {
+    text-decoration: none;
+    color: var(--off);
+    font-size: 30px;
+
+    transition: all 0.1s;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+    color: var(--main);
+}
+
+#social-links.active {
+    transform: translateY(-125px);
+}
+
+
+#nav-bar {
+    display: flex;
+    gap: 50px;
+
+    transform: translateY(-125px) !important;
+
+    transition: all 0.3s;
+}
+
+#nav-bar.active {
+    transform: translateY(0px) !important;
+}
+
+.nav-item {
+    all: unset;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-item::before {
+    content: "";
+    position: absolute;
+
+    background-color: #ffffff;
+    width: 0%;
+    height: 2px;
+
+    bottom: -5px;
+
+    transition: all 0.2s;
+}
+
+.nav-item:hover::before {
+    width: 100%;
+}
+
+.nav-item.selected::before {
+    width: 100%;
+}
+
+#ng-logo {
+    height: 65%;
+}
+
+#ham-menu-nav {
+    height: var(--ham-menu-height);
+}
+
+#ham-menu {
+    width: var(--ham-menu-width);
+    height: var(--ham-menu-height);
+    position: absolute;
+    right: calc(var(--main-margin) - var(--ham-menu-width));
+
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#ham-menu span {
+    height: 3px;
+    width: 100%;
+    background-color: var(--main);
+    border-radius: 25px;
+    position: absolute;
+}
+
+#ham-menu.active, #ham-layer1, #ham-layer2, #ham-layer3 {
+    transition: all 0.2s ease-in-out;
+}
+
+#ham-layer1 {
+    top: 0%;
+}
+
+#ham-layer2 {
+    top: 50%;
+}
+
+#ham-layer3 {
+    top: 100%;
+}
+
+#ham-layer1, #ham-layer2, #ham-layer3 {
+    left: 0%;
+}
+
+#ham-menu.active #ham-layer1 {
+    width: 20%;
+    left: 80%;
+}
+
+#ham-menu.active #ham-layer2 {
+    width: 40%;
+    left: 60%;
+}
+
+#ham-menu.active #ham-layer3 {
+    width: 60%;
+    left: 40%;
+}

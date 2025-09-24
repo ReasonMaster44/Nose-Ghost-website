@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/stylesheet.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/navigation.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/videos.css') }}">
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+        
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            referrerpolicy="no-referrer"/>
+
+    </head>
+    <body>
+        <div id="header">
+            <img class="only-mobile" id="ng-logo" src="{{ url_for('static', filename='images/logo-small.png')}}">
+            <img class="only-desktop" id="ng-logo" src="{{ url_for('static', filename='images/logo-large.png')}}">
+            
+            
+            <div id="header-links">
+                <div id="social-and-nav-links">
+                    <div id="social-links">
+                        <a class="social-link fa-brands fa-spotify" href="https://open.spotify.com/artist/0Vqti19iperDl11P2PJm1z?si=ijvsofsWShOaOxQ091EjSA" target="_blank"></a>
+                        <a class="social-link fa-brands fa-itunes-note" href="https://music.apple.com/us/artist/nose-ghost/1755930902" target="_blank"></a>
+                        <a class="social-link fa-brands fa-youtube" href="https://youtube.com/@noseghost-y9d?si=lwpJJ8is0lmZnHGE" target="_blank"></a>
+                        <a class="social-link fa-brands fa-instagram" href="https://www.instagram.com/nose.ghost.band?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"></a>
+                    </div>
+
+                    <nav id="nav-bar">
+                        <a class="nav-item"  href="{{ url_for('index')}}">HOME</a>
+                        <a class="nav-item" href="{{ url_for('tour')}}">TOUR</a>
+                        <a class="nav-item selected" href="{{ url_for('videos')}}">VIDEOS</a>
+                        <a class="nav-item" href="{{ url_for('contact')}}">CONTACT</a>
+                    </nav>
+                </div>
+                
+                
+                <nav id="ham-menu-nav">
+                    <div id="ham-menu">
+                        <span id="ham-layer1"></span>
+                        <span id="ham-layer2"></span>
+                        <span id="ham-layer3"></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <hr>
+        <br>
+
+        <div id="yt-embed-container">
+            <iframe id="yt-embed" src="https://www.youtube.com/embed/S9gxxId7jSA?si=tH7pqGlsjmCUvhep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <iframe id="yt-embed" src="https://www.youtube.com/embed/-bq1FJ9pcyo?si=9dlDMAcT5dIXPdP-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <iframe id="yt-embed" src="https://www.youtube.com/embed/r5Y995m-K8g?si=1NX8LAOvLPB1R6FP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <iframe id="yt-embed" src="https://www.youtube.com/embed/BIPvDrGLFao?si=L_U3rsr5y1d0gpoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <iframe id="yt-embed" src="https://www.youtube.com/embed/p5rTlNHpR_I?si=1cMFNtjRHY1eB2sA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <p>More videos coming soon...</p>
+            <br>
+        </div>
+        
+        
+    </body>
+</html>

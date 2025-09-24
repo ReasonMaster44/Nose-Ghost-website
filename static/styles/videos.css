@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1100px) {
+    #yt-embed {
+        width: 90% !important;
+    }
+}
+
+#yt-embed {
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    
+    border-radius: 10px;
+
+    margin: 30px;
+}
+
+#yt-embed-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,32 @@
+#tour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gig-card {
+    text-decoration: none;
+
+    border: 2px dashed var(--off);
+    border-radius: 6px;
+
+    color: var(--off);
+
+    min-width: 50%;
+    max-width: 90%;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+
+    transition: all 0.2s;
+}
+
+.gig-card:hover {
+    border-color: var(--main);
+    color: var(--main);
+    border-radius: 15px;
+}

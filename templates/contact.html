@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/stylesheet.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/navigation.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/contact.css') }}">
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+        
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            referrerpolicy="no-referrer"/>
+
+    </head>
+    <body>
+        <div id="header">
+            <img class="only-mobile" id="ng-logo" src="{{ url_for('static', filename='images/logo-small.png')}}">
+            <img class="only-desktop" id="ng-logo" src="{{ url_for('static', filename='images/logo-large.png')}}">
+            
+            
+            <div id="header-links">
+                <div id="social-and-nav-links">
+                    <div id="social-links">
+                        <a class="social-link fa-brands fa-spotify" href="https://open.spotify.com/artist/0Vqti19iperDl11P2PJm1z?si=ijvsofsWShOaOxQ091EjSA" target="_blank"></a>
+                        <a class="social-link fa-brands fa-itunes-note" href="https://music.apple.com/us/artist/nose-ghost/1755930902" target="_blank"></a>
+                        <a class="social-link fa-brands fa-youtube" href="https://youtube.com/@noseghost-y9d?si=lwpJJ8is0lmZnHGE" target="_blank"></a>
+                        <a class="social-link fa-brands fa-instagram" href="https://www.instagram.com/nose.ghost.band?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"></a>
+                    </div>
+
+                    <nav id="nav-bar">
+                        <a class="nav-item"  href="{{ url_for('index')}}">HOME</a>
+                        <a class="nav-item" href="{{ url_for('tour')}}">TOUR</a>
+                        <a class="nav-item" href="{{ url_for('videos')}}">VIDEOS</a>
+                        <a class="nav-item selected" href="{{ url_for('contact')}}">CONTACT</a>
+                    </nav>
+                </div>
+                
+                
+                <nav id="ham-menu-nav">
+                    <div id="ham-menu">
+                        <span id="ham-layer1"></span>
+                        <span id="ham-layer2"></span>
+                        <span id="ham-layer3"></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <hr>
+        <br>
+        
+
+        <form id="contact" action="/contact" method="POST">
+            <h2>Contact Us</h2>
+            <br>
+            <p>For gig booking or general enquiries, contact us here or DM us on <a href="https://www.instagram.com/nose.ghost.band" target="_blank">Instagram</a>.</p>
+            <br>
+            <div id="name-and-email">
+                <input type="text" placeholder="Name" name="name" id="contact-name">
+                <input type="text" placeholder="Email" name="email" id="contact-email">
+            </div>
+            <br>
+            <textarea style="width:calc(100% - 20px);" placeholder="Message" name="message" id="contact-message"></textarea>
+            <br>
+            <button type="submit">Send</button>
+
+        </form>
+
+        
+        
+        
+    </body>
+</html>
