@@ -15,6 +15,10 @@
         width: 100% !important;
         height: auto !important;
     }
+
+    #new-release-link {
+        width: 100%;
+    }
 }
 
 #content {
@@ -65,9 +69,7 @@
 }
 
 
-#new-release-link {
-    width: 100%;
-}
+
 
 #new-release-image:hover {
     transform: scale(1.05);
