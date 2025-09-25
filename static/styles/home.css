@@ -59,7 +59,6 @@
 
     /*filter: drop-shadow(0px 0px 10px #000) drop-shadow(0px 0px 25px #000) drop-shadow(0px 0px 40px #000);*/
     filter: drop-shadow(0px 0px 20px #000);
-    padding: 30px;
 }
 
 #new-release-image {
@@ -85,4 +84,9 @@
 #new-release-yt-embed {
     height: 100%;
     aspect-ratio: 16 / 9;
+}
+
+#main-photo {
+    padding: 30px;
+    width: 100%;
 }

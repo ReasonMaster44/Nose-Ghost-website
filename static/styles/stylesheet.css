@@ -13,6 +13,10 @@
     }
 }
 
+hr {
+    margin: 0px;
+}
+
 :root {
     --main: #ede5e3;
     --off: #a8a2a0;
