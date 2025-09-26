@@ -7,7 +7,7 @@
         display: none !important;
     }
 
-    #header {
+    header {
         height: 200px !important;
     }
 
@@ -16,7 +16,7 @@
     }
 }
 
-#header {
+header {
     display: flex;
 
     justify-content: space-between;

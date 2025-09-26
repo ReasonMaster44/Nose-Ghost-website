@@ -17,84 +17,96 @@
 
     </head>
     <body>
-        <div id="header">
-            <img class="only-mobile" id="ng-logo" src="{{ url_for('static', filename='images/logo-small.png')}}">
-            <img class="only-desktop" id="ng-logo" src="{{ url_for('static', filename='images/logo-large.png')}}">
-            
-            
-            <div id="header-links">
-                <div id="social-and-nav-links">
-                    <div id="social-links">
-                        <a class="social-link fa-brands fa-spotify" href="https://open.spotify.com/artist/0Vqti19iperDl11P2PJm1z?si=ijvsofsWShOaOxQ091EjSA" target="_blank"></a>
-                        <a class="social-link fa-brands fa-itunes-note" href="https://music.apple.com/us/artist/nose-ghost/1755930902" target="_blank"></a>
-                        <a class="social-link fa-brands fa-youtube" href="https://youtube.com/@noseghost-y9d?si=lwpJJ8is0lmZnHGE" target="_blank"></a>
-                        <a class="social-link fa-brands fa-instagram" href="https://www.instagram.com/nose.ghost.band?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"></a>
-                    </div>
+        <main>
+            <header>
+                <img class="only-mobile" id="ng-logo" src="{{ url_for('static', filename='images/logo-small.png')}}">
+                <img class="only-desktop" id="ng-logo" src="{{ url_for('static', filename='images/logo-large.png')}}">
+                
+                
+                <div id="header-links">
+                    <div id="social-and-nav-links">
+                        <div id="social-links">
+                            <a class="social-link fa-brands fa-spotify" href="https://open.spotify.com/artist/0Vqti19iperDl11P2PJm1z?si=ijvsofsWShOaOxQ091EjSA" target="_blank"></a>
+                            <a class="social-link fa-brands fa-itunes-note" href="https://music.apple.com/us/artist/nose-ghost/1755930902" target="_blank"></a>
+                            <a class="social-link fa-brands fa-youtube" href="https://youtube.com/@noseghost-y9d?si=lwpJJ8is0lmZnHGE" target="_blank"></a>
+                            <a class="social-link fa-brands fa-instagram" href="https://www.instagram.com/nose.ghost.band?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"></a>
+                        </div>
 
-                    <nav id="nav-bar">
-                        <a class="nav-item selected"  href="{{ url_for('index')}}">HOME</a>
-                        <a class="nav-item" href="{{ url_for('about')}}">ABOUT</a>
-                        <a class="nav-item" href="{{ url_for('videos')}}">VIDEOS</a>
+                        <nav id="nav-bar">
+                            <a class="nav-item selected"  href="{{ url_for('index')}}">HOME</a>
+                            <a class="nav-item" href="{{ url_for('about')}}">ABOUT</a>
+                            <a class="nav-item" href="{{ url_for('videos')}}">VIDEOS</a>
+                        </nav>
+                    </div>
+                    
+                    
+                    <nav id="ham-menu-nav">
+                        <div id="ham-menu">
+                            <span id="ham-layer1"></span>
+                            <span id="ham-layer2"></span>
+                            <span id="ham-layer3"></span>
+                        </div>
                     </nav>
                 </div>
-                
-                
-                <nav id="ham-menu-nav">
-                    <div id="ham-menu">
-                        <span id="ham-layer1"></span>
-                        <span id="ham-layer2"></span>
-                        <span id="ham-layer3"></span>
-                    </div>
-                </nav>
+            </header>
+
+            <hr>
+            <img class="only-mobile" id="main-photo" src="{{ url_for('static', filename='./images/all-orford-house.webp')}}">
+            
+            <div id="new-release">
+                <h2>NEW SINGLE OUT NOW</h2>
+                <br>
+                <div id="new-release-image-and-video">
+                    <a id="new-release-link" href="https://open.spotify.com/album/3SJEZyQHqObgt4Y3Ial37B?si=-nLr0t9xTbadtpwG6Iciew" target="_blank"><img id="new-release-image" src="{{ url_for('static', filename='images/anaconda-cover.webp')}}"></a>
+                    <iframe id="new-release-yt-embed" src="https://www.youtube.com/embed/p5rTlNHpR_I?si=pF8eDpOid4F7Fi27&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
-        </div>
+
+            <hr>
+            <br>
+
+            <div id="tour">
+                <h2>TOUR</h2>
+                <p>No gigs for now. Stay tuned.</p>
+                <!--
+                <a href="https://ticketool.co.uk/events-fe/9ecef09e-dc07-460a-b23e-86c9d0458298?promoter=98f3bf22-e7a4-4de7-9f2f-229b53b84e54&fbclid=PAZXh0bgNhZW0CMTEAAaflnql-n6JIe83vm1s7PeULYVjiR_Xkcp20g3s59dB3QRVXxdVQfPboop-qyQ_aem_HqlxHKfkRUTK9clWGmd0oA" target="_blank" class="gig-card">
+                    <h3>The Old Queens Head</h3>
+                    <p>5th June 2025</p>
+                    <p>44 Essex Rd, London N1 8LN</p>
+                </a>
+                -->
+
+            </div>
+
+            <hr>
+            <br>
+
+            <form id="contact" action="{{ url_for('index') }}" method="POST">
+                <h2>Contact Us</h2>
+                <p>For gig booking or general enquiries, contact us here or DM us on <a href="https://www.instagram.com/nose.ghost.band" target="_blank">Instagram</a>.</p>
+                <div id="name-and-email">
+                    <input type="text" placeholder="Name" name="name" id="contact-name">
+                    <input type="text" placeholder="Email" name="email" id="contact-email">
+                </div>
+                <br>
+                <textarea style="width:calc(100% - 20px);" placeholder="Message" name="message" id="contact-message"></textarea>
+                <br>
+                <button type="submit">Send</button>
+
+            </form>
+            
+            <br>
+        </main>
 
         <hr>
-        <img class="only-mobile" id="main-photo" src="{{ url_for('static', filename='./images/all-orford-house.webp')}}">
-        
-        <div id="new-release">
-            <h2>NEW SINGLE OUT NOW</h2>
-            <br>
-            <div id="new-release-image-and-video">
-                <a id="new-release-link" href="https://open.spotify.com/album/3SJEZyQHqObgt4Y3Ial37B?si=-nLr0t9xTbadtpwG6Iciew" target="_blank"><img id="new-release-image" src="{{ url_for('static', filename='images/anaconda-cover.webp')}}"></a>
-                <iframe id="new-release-yt-embed" src="https://www.youtube.com/embed/p5rTlNHpR_I?si=pF8eDpOid4F7Fi27&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <footer>
+            <div id="footer-social-links">
+                <a class="social-link fa-brands fa-spotify" href="https://open.spotify.com/artist/0Vqti19iperDl11P2PJm1z?si=ijvsofsWShOaOxQ091EjSA" target="_blank"></a>
+                <a class="social-link fa-brands fa-itunes-note" href="https://music.apple.com/us/artist/nose-ghost/1755930902" target="_blank"></a>
+                <a class="social-link fa-brands fa-youtube" href="https://youtube.com/@noseghost-y9d?si=lwpJJ8is0lmZnHGE" target="_blank"></a>
+                <a class="social-link fa-brands fa-instagram" href="https://www.instagram.com/nose.ghost.band?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"></a>
             </div>
-        </div>
+        </footer>
 
-        <hr>
-        <br>
-
-        <div id="tour">
-            <h2>TOUR</h2>
-            <p>No gigs for now. Stay tuned.</p>
-            <!--
-            <a href="https://ticketool.co.uk/events-fe/9ecef09e-dc07-460a-b23e-86c9d0458298?promoter=98f3bf22-e7a4-4de7-9f2f-229b53b84e54&fbclid=PAZXh0bgNhZW0CMTEAAaflnql-n6JIe83vm1s7PeULYVjiR_Xkcp20g3s59dB3QRVXxdVQfPboop-qyQ_aem_HqlxHKfkRUTK9clWGmd0oA" target="_blank" class="gig-card">
-                <h3>The Old Queens Head</h3>
-                <p>5th June 2025</p>
-                <p>44 Essex Rd, London N1 8LN</p>
-            </a>
-            -->
-
-        </div>
-
-        <hr>
-        <br>
-
-        <form id="contact" action="{{ url_for('index') }}" method="POST">
-            <h2>Contact Us</h2>
-            <p>For gig booking or general enquiries, contact us here or DM us on <a href="https://www.instagram.com/nose.ghost.band" target="_blank">Instagram</a>.</p>
-            <div id="name-and-email">
-                <input type="text" placeholder="Name" name="name" id="contact-name">
-                <input type="text" placeholder="Email" name="email" id="contact-email">
-            </div>
-            <br>
-            <textarea style="width:calc(100% - 20px);" placeholder="Message" name="message" id="contact-message"></textarea>
-            <br>
-            <button type="submit">Send</button>
-
-        </form>
-
-
-        
     </body>
 </html>
