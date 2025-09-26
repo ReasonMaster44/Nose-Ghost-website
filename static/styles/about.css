@@ -1,0 +1,11 @@
+#content {
+    display: flex;
+
+    gap: 50px;
+
+    margin: 0px var(--main-margin) 0px var(--main-margin);
+}
+
+.content-image {
+    width: 40%;
+}

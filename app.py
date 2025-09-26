@@ -15,16 +15,8 @@ app.config["MAIL_DEFAULT_SENDER"] = ("Nose Ghost", os.environ.get("MAIL_USERNAME
 
 mail = Mail(app)
 
-@app.route("/")
+@app.route("/", methods=["POST", "GET"])
 def index():
-    return render_template("index.html")
-
-@app.route("/tour")
-def tour():
-    return render_template("tour.html")
-
-@app.route("/contact", methods=["POST", "GET"])
-def contact():
     if request.method == "POST":
         name = request.form["name"]
         email = request.form["email"]
@@ -42,10 +34,13 @@ def contact():
             return render_template("message-sent.html")
         except Exception as e:
             flash(f"Error sending message: {e}", "danger")
-
-        return redirect(url_for("contact"))
     
-    return render_template("contact.html")
+    return render_template("index.html")
+
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 @app.route("/videos")
 def videos():
