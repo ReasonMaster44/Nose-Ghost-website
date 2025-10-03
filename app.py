@@ -46,5 +46,9 @@ def about():
 def videos():
     return render_template("videos.html")
 
+@app.route("/gallery")
+def gallery():
+    return render_template("gallery.html")
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port="4999", debug=True)

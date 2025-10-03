@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/stylesheet.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/navigation.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/gallery.css') }}">
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+        
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            referrerpolicy="no-referrer"/>
+
+    </head>
+    <body>
+        <main>
+            <header>
+                <img class="only-mobile" id="ng-logo" src="{{ url_for('static', filename='images/logo-small.png')}}">
+                <img class="only-desktop" id="ng-logo" src="{{ url_for('static', filename='images/logo-large.png')}}">
+                
+                
+                <div id="header-links">
+                    <div id="social-and-nav-links">
+                        <nav id="nav-bar" class="active">
+                            <a class="nav-item"  href="{{ url_for('index')}}">HOME</a>
+                            <a class="nav-item" href="{{ url_for('about')}}">ABOUT</a>
+                            <a class="nav-item" href="{{ url_for('videos')}}">VIDEOS</a>
+                            <a class="nav-item selected" href="{{ url_for('gallery')}}">GALLERY</a>
+                        </nav>
+                    </div>
+                </div>
+
+                
+            </header>
+            <hr>
+            <div class="only-desktop" id="gallery-rows">
+                <div class="gallery-row">
+                    <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/DY5A7211.jpg') }}">     
+                    <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/DSCF3403.JPG') }}">
+                </div>
+                <div class="gallery-row">
+                    <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/DY5A0997.jpg') }}">
+                    <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/_MG_5607-2.jpg') }}">
+                </div>
+                <div class="gallery-row">
+                    <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/_MG_5639-2.jpg') }}">
+                    <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/DSCF3418.JPG') }}">
+                </div>
+                <div class="gallery-row">
+                    <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/DY5A1843.jpg') }}">
+                    <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/_MG_5560-2.jpg') }}">
+                </div>
+                <div class="gallery-row">
+                    <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/_MG_5489-2.jpg') }}">
+                    <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/DY5A1746.jpg') }}">
+                </div>
+            </div>
+
+            <div id="mobile-gallery-images">
+                <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/DY5A7211.jpg') }}">
+                <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/DSCF3403.JPG') }}">
+                <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/DY5A0997.jpg') }}">
+                <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/_MG_5607-2.jpg') }}">
+                <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/_MG_5639-2.jpg') }}">
+                <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/DSCF3418.JPG') }}">
+                <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/DY5A1843.jpg') }}">
+                <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/_MG_5560-2.jpg') }}">
+                <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/_MG_5489-2.jpg') }}">
+                <img class="gallery-image" src="{{ url_for('static', filename='images/gallery/DY5A1746.jpg') }}">
+            </div>
+        </main>
+
+        <hr>
+        <footer>
+            <div id="footer-social-links">
+                <a class="social-link fa-brands fa-spotify" href="https://open.spotify.com/artist/0Vqti19iperDl11P2PJm1z?si=ijvsofsWShOaOxQ091EjSA" target="_blank"></a>
+                <a class="social-link fa-brands fa-itunes-note" href="https://music.apple.com/us/artist/nose-ghost/1755930902" target="_blank"></a>
+                <a class="social-link fa-brands fa-youtube" href="https://youtube.com/@nose_ghost?si=ywrEOC1qKlrTGesD" target="_blank"></a>
+                <a class="social-link fa-brands fa-instagram" href="https://www.instagram.com/nose.ghost.band?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"></a>
+            </div>
+        </footer>
+
+    </body>
+</html>
