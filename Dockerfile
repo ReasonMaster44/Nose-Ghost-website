@@ -7,8 +7,10 @@ WORKDIR /app
 # Copy files
 COPY requirements.txt .
 COPY app.py .
+COPY get_gigs.py .
 COPY templates ./templates
 COPY static ./static
+COPY data ./data
 COPY Procfile .
 
 # Install dependencies
