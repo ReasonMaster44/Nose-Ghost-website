@@ -2,7 +2,7 @@
     .gallery-image {
         margin: calc(var(--main-margin) / 4) !important;
 
-        width: 100%;
+        width: calc(100% - calc(var(--main-margin) / 2));
         height: auto !important;
     }
 }

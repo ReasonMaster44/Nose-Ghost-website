@@ -127,5 +127,5 @@ a:hover {
 }
 
 .only-mobile {
-    display: none
+    display: none !important;
 }
