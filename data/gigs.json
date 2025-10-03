@@ -1,44 +1,72 @@
 {
     "Bedford Esquires": {
-        "date": "05/09/2025"
+        "date": "05/09/2025",
+        "ticket-link": "",
+        "location": "60A Bromham Rd, Bedford MK40 2QG"
     },
     "Fiddler's Elbow": {
-        "date": "03/09/2025"
+        "date": "03/09/2025",
+        "ticket-link": "",
+        "location": "1 Malden Rd, Chalk Farm, London NW5 3HS"
     },
     "Stag's Head": {
-        "date": "16/08/2025"
+        "date": "16/08/2025",
+        "ticket-link": "",
+        "location": "55 Orsman Rd, London N1 5RA"
     },
     "Southwark Tavern": {
-        "date": "12/07/2025"
+        "date": "12/07/2025",
+        "ticket-link": "",
+        "location": "22 Southwark St, Greater, London SE1 1TU"
     },
-    "Black Heart": {
-        "date": "28/06/2025"
+    "The Black Heart": {
+        "date": "28/06/2025",
+        "ticket-link": "",
+        "location": "3 Greenland Pl, London NW1 0AP"
     },
     "Claddagh Ring": {
-        "date": "13/06/2025"
+        "date": "13/06/2025",
+        "ticket-link": "",
+        "location": "10 Church Rd, London NW4 4EA"
     },
-    "Old Queen's Head": {
-        "date": "05/06/2025"
+    "The Old Queen's Head": {
+        "date": "05/06/2025",
+        "ticket-link": "",
+        "location": "44 Essex Rd, London N1 8LN"
     },
     "Spice of Life": {
-        "date": "16/05/2025"
+        "date": "16/05/2025",
+        "ticket-link": "",
+        "location": "6 Moor St, London W1D 5NA"
     },
     "Fiddler's Elbow": {
-        "date": "30/04/2025"
+        "date": "30/04/2025",
+        "ticket-link": "",
+        "location": "1 Malden Rd, Chalk Farm, London NW5 3HS"
     },
-    "Trinity Bar": {
-        "date": "25/01/2025"
+    "Trinity": {
+        "date": "25/01/2025",
+        "ticket-link": "",
+        "location": "378-380 Station Rd, Harrow HA1 2DE"
     },
-    "Trinity Bar": {
-        "date": "02/11/2024"
+    "Trinity": {
+        "date": "02/11/2024",
+        "ticket-link": "",
+        "location": "378-380 Station Rd, Harrow HA1 2DE"
     },
-    "Good Mixer": {
-        "date": "26/09/2024"
+    "The Good Mixer": {
+        "date": "26/09/2024",
+        "ticket-link": "",
+        "location": "30 Inverness St, London NW1 7HJ"
     },
     "Walthamstow Trades Hall": {
-        "date": "20/09/2024"
+        "date": "20/09/2024",
+        "ticket-link": "",
+        "location": "61-63 Tower Hamlets Rd, London E17 4RQ"
     },
     "Orford House": {
-        "date": "24/08/2024"
+        "date": "24/08/2024",
+        "ticket-link": "",
+        "location": "73 Orford Rd, London E17 9QR"
     }
 }

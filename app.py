@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, flash, redirect, url_for
 from flask_mail import Mail, Message
 import secrets
 import os
+from get_gigs import get_gigs
 
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(16)
@@ -34,8 +35,8 @@ def index():
             return render_template("message-sent.html")
         except Exception as e:
             flash(f"Error sending message: {e}", "danger")
-    
-    return render_template("index.html")
+
+    return render_template("index.html", gigs=get_gigs())
 
 
 @app.route("/about")

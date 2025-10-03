@@ -28,4 +28,16 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
     })
+
+    const view_more = document.getElementById("view-more");
+    const past_gigs = document.getElementById("past-gigs");
+    view_more.addEventListener("click", () => {
+        past_gigs.classList.toggle("active");
+
+        if (view_more.textContent.includes("View more")) {
+            view_more.innerHTML = 'View less <i class="fa-solid fa-chevron-up"></i>';
+        } else {
+            view_more.innerHTML = 'View more <i class="fa-solid fa-chevron-down"></i>';
+        }
+    })
 });

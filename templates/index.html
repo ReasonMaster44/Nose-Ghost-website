@@ -67,18 +67,44 @@
             <br>
 
             <div id="tour">
-                <h2>TOUR</h2>
-                <p>No gigs for now. Stay tuned.</p>
-                <!--
-                <a href="https://ticketool.co.uk/events-fe/9ecef09e-dc07-460a-b23e-86c9d0458298?promoter=98f3bf22-e7a4-4de7-9f2f-229b53b84e54&fbclid=PAZXh0bgNhZW0CMTEAAaflnql-n6JIe83vm1s7PeULYVjiR_Xkcp20g3s59dB3QRVXxdVQfPboop-qyQ_aem_HqlxHKfkRUTK9clWGmd0oA" target="_blank" class="gig-card">
-                    <h3>The Old Queens Head</h3>
-                    <p>5th June 2025</p>
-                    <p>44 Essex Rd, London N1 8LN</p>
-                </a>
-                -->
+                <div class="gigs">
+                    <h2>Upcoming Gigs</h2>
+                    <br>
+                    {% if gigs['current-gigs'] %}
+                        {% for gig in gigs['current-gigs'] %}
+                            <a href="{{ gig['ticket-link'] }}" target="_blank" class="gig-card">
+                                <div class="venue-and-date only-mobile">
+                                    <h3>{{ gig }}</h3>
+                                    <p>{{ gigs['current-gigs'][gig]['date'] }} - {{ gigs['current-gigs'][gig]['location'] }}</p>
+                                </div>
 
+                                <h3 class="only-desktop">{{ gig }}</h3>
+                                <p class="only-desktop">{{ gigs['current-gigs'][gig]['date'] }}</p>
+                                <p class="only-desktop">{{ gigs['current-gigs'][gig]['location'] }}</p>
+                            </a>
+                        {% endfor %}
+                    {% else %}
+                        <p>No gigs for now. Stay tuned.</p>
+                    {% endif %}
+                </div>
+                <h3>Past gigs</h3>
+                <div class="gigs" id="past-gigs">
+                    {% for gig in gigs["past-gigs"] %}
+                        <div href="{{ gig['ticket-link'] }}" target="_blank" class="gig-card past-gig">
+                            <div class="venue-and-date only-mobile">
+                                <h3>{{ gig }}</h3>
+                                <p>{{ gigs['past-gigs'][gig]['date'] }} - {{ gigs['past-gigs'][gig]['location'] }}</p>
+                            </div>
+
+                            <h3 class="only-desktop">{{ gig }}</h3>
+                            <p class="only-desktop">{{ gigs['past-gigs'][gig]['date'] }}</p>
+                            <p class="only-desktop">{{ gigs['past-gigs'][gig]['location'] }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+
+                <p id="view-more">View more <i class="fa-solid fa-chevron-down"></i></p>
             </div>
-
             <hr>
             <br>
 
