@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash, redirect, url_for
+from flask import Flask, render_template, request, flash, send_from_directory
 from flask_mail import Mail, Message
 import secrets
 import os
@@ -50,6 +50,14 @@ def videos():
 @app.route("/gallery")
 def gallery():
     return render_template("gallery.html")
+
+@app.route("/llms.txt")
+def serve_llms():
+    return send_from_directory("static", "llms.txt")
+
+@app.route("/sitemap.xml")
+def serve_sitemap():
+    return send_from_directory("static", "sitemap.xml")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port="4999", debug=True)
