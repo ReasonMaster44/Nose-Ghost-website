@@ -11,6 +11,8 @@ COPY get_gigs.py .
 COPY templates ./templates
 COPY static ./static
 COPY data ./data
+COPY sitemap.xml .
+COPY llms.txt .
 COPY Procfile .
 
 # Install dependencies
