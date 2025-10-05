@@ -91,14 +91,25 @@
                 <div class="gigs" id="past-gigs">
                     {% for gig in gigs["past-gigs"] %}
                         <div href="{{ gig['ticket-link'] }}" target="_blank" class="gig-card past-gig">
-                            <div class="venue-and-date only-mobile">
-                                <h3>{{ gig }}</h3>
-                                <p>{{ gigs['past-gigs'][gig]['date'] }} - {{ gigs['past-gigs'][gig]['location'] }}</p>
-                            </div>
+                            <div class="gig-card-content">
+                                <div class="venue-and-date only-mobile">
+                                    <h3>{{ gig }}</h3>
+                                    <p>{{ gigs['past-gigs'][gig]['date'] }} - {{ gigs['past-gigs'][gig]['location'] }}</p>
+                                </div>
 
-                            <h3 class="only-desktop">{{ gig }}</h3>
-                            <p class="only-desktop">{{ gigs['past-gigs'][gig]['date'] }}</p>
-                            <p class="only-desktop">{{ gigs['past-gigs'][gig]['location'] }}</p>
+                                <h3 class="only-desktop">{{ gig }}</h3>
+                                <p class="only-desktop">{{ gigs['past-gigs'][gig]['date'] }}</p>
+                                <p class="only-desktop">{{ gigs['past-gigs'][gig]['location'] }}</p>
+                            </div>
+                            <!--
+                            <div class="gig-card-extra-content">
+                                {% if gigs['past-gigs'][gig]['poster-filename'] %}
+                                    <img class="gig-poster" src="{{ url_for('static', filename='images/posters/' ~ gigs['past-gigs'][gig]['poster-filename']) }}">
+                                {% endif %}
+
+                            </div>
+                            <i class="expand-gig-icon fa-solid fa-chevron-down"></i>
+                            -->
                         </div>
                     {% endfor %}
                 </div>

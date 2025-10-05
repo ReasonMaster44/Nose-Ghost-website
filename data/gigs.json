@@ -2,71 +2,91 @@
     "Bedford Esquires": {
         "date": "05/09/2025",
         "ticket-link": "",
-        "location": "60A Bromham Rd, Bedford MK40 2QG"
+        "location": "60A Bromham Rd, Bedford MK40 2QG",
+        "poster-filename": ""
     },
     "Fiddler's Elbow": {
         "date": "03/09/2025",
         "ticket-link": "",
-        "location": "1 Malden Rd, Chalk Farm, London NW5 3HS"
+        "location": "1 Malden Rd, Chalk Farm, London NW5 3HS",
+        "poster-filename": ""
     },
     "Stag's Head": {
         "date": "16/08/2025",
         "ticket-link": "",
-        "location": "55 Orsman Rd, London N1 5RA"
+        "location": "55 Orsman Rd, London N1 5RA",
+        "poster-filename": ""
     },
     "Southwark Tavern": {
         "date": "12/07/2025",
         "ticket-link": "",
-        "location": "22 Southwark St, Greater, London SE1 1TU"
+        "location": "22 Southwark St, Greater, London SE1 1TU",
+        "poster-filename": ""
     },
     "The Black Heart": {
         "date": "28/06/2025",
         "ticket-link": "",
-        "location": "3 Greenland Pl, London NW1 0AP"
+        "location": "3 Greenland Pl, London NW1 0AP",
+        "poster-filename": ""
     },
     "Claddagh Ring": {
         "date": "13/06/2025",
         "ticket-link": "",
-        "location": "10 Church Rd, London NW4 4EA"
+        "location": "10 Church Rd, London NW4 4EA",
+        "poster-filename": ""
     },
     "The Old Queen's Head": {
         "date": "05/06/2025",
         "ticket-link": "",
-        "location": "44 Essex Rd, London N1 8LN"
+        "location": "44 Essex Rd, London N1 8LN",
+        "poster-filename": "Old Queens Head.png"
     },
     "Spice of Life": {
         "date": "16/05/2025",
         "ticket-link": "",
-        "location": "6 Moor St, London W1D 5NA"
+        "location": "6 Moor St, London W1D 5NA",
+        "poster-filename": "Spice of Life.png"
     },
     "Fiddler's Elbow": {
         "date": "30/04/2025",
         "ticket-link": "",
-        "location": "1 Malden Rd, Chalk Farm, London NW5 3HS"
+        "location": "1 Malden Rd, Chalk Farm, London NW5 3HS",
+        "poster-filename": ""
     },
     "Trinity": {
         "date": "25/01/2025",
         "ticket-link": "",
-        "location": "378-380 Station Rd, Harrow HA1 2DE"
+        "location": "378-380 Station Rd, Harrow HA1 2DE",
+        "poster-filename": "2024 10 Halloweenasher.png"
+    },
+    "The Two Bridges": {
+        "date": "31/12/2024",
+        "ticket-link": "",
+        "location": "186 Tooley St, London SE1 2TZ",
+        "poster-filename": "Two Bridges New Years.jpg"
     },
     "Trinity": {
         "date": "02/11/2024",
         "ticket-link": "",
-        "location": "378-380 Station Rd, Harrow HA1 2DE"
+        "location": "378-380 Station Rd, Harrow HA1 2DE",
+        "poster-filename": "2024 10 HalloweenDan.png"
     },
     "The Good Mixer": {
         "date": "26/09/2024",
         "ticket-link": "",
-        "location": "30 Inverness St, London NW1 7HJ"
+        "location": "30 Inverness St, London NW1 7HJ",
+        "poster-filename": "The Good Mixer.png"
     },
     "Walthamstow Trades Hall": {
         "date": "20/09/2024",
         "ticket-link": "",
-        "location": "61-63 Tower Hamlets Rd, London E17 4RQ"
+        "location": "61-63 Tower Hamlets Rd, London E17 4RQ",
+        "poster-filename": ""
     },
     "Orford House": {
         "date": "24/08/2024",
         "ticket-link": "",
-        "location": "73 Orford Rd, London E17 9QR"
+        "location": "73 Orford Rd, London E17 9QR",
+        "poster-filename": "Orford House.png"
     }
 }

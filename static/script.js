@@ -40,4 +40,15 @@ document.addEventListener("DOMContentLoaded", () => {
             view_more.innerHTML = 'View more <i class="fa-solid fa-chevron-down"></i>';
         }
     })
+
+    const expand_gig_icons = document.getElementsByClassName("expand-gig-icon");
+
+    for (let i = 0; i < expand_gig_icons.length; i++) {
+        expand_gig_icons[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            
+            const parent = this.parentElement;
+            parent.classList.toggle("active");
+        });
+    }
 });
