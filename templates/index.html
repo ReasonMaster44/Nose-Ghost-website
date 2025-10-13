@@ -71,16 +71,18 @@
                     <h2>Upcoming Gigs</h2>
                     <br>
                     {% if gigs['current-gigs'] %}
-                        {% for gig in gigs['current-gigs'] %}
-                            <a href="{{ gig['ticket-link'] }}" target="_blank" class="gig-card">
-                                <div class="venue-and-date only-mobile">
-                                    <h3>{{ gig }}</h3>
-                                    <p>{{ gigs['current-gigs'][gig]['date'] }} - {{ gigs['current-gigs'][gig]['location'] }}</p>
-                                </div>
+                        {% for gig in gigs["current-gigs"] %}
+                            <a href="{{ gigs['current-gigs'][gig]['ticket-link'] }}" target="_blank" class="gig-card current-gig">
+                                <div class="gig-card-content">
+                                    <div class="venue-and-date only-mobile">
+                                        <h3>{{ gigs['current-gigs'][gig]['venue'] }}</h3>
+                                        <p>{{ gigs['current-gigs'][gig]['date'] }} - {{ gigs['current-gigs'][gig]['location'] }}</p>
+                                    </div>
 
-                                <h3 class="only-desktop">{{ gig }}</h3>
-                                <p class="only-desktop">{{ gigs['current-gigs'][gig]['date'] }}</p>
-                                <p class="only-desktop">{{ gigs['current-gigs'][gig]['location'] }}</p>
+                                    <h3 class="only-desktop">{{ gigs['current-gigs'][gig]['venue'] }}</h3>
+                                    <p class="only-desktop">{{ gigs['current-gigs'][gig]['date'] }}</p>
+                                    <p class="only-desktop">{{ gigs['current-gigs'][gig]['location'] }}</p>
+                                </div>
                             </a>
                         {% endfor %}
                     {% else %}
@@ -93,11 +95,11 @@
                         <div href="{{ gig['ticket-link'] }}" target="_blank" class="gig-card past-gig">
                             <div class="gig-card-content">
                                 <div class="venue-and-date only-mobile">
-                                    <h3>{{ gig }}</h3>
+                                    <h3>{{ gigs['past-gigs'][gig]['venue'] }}</h3>
                                     <p>{{ gigs['past-gigs'][gig]['date'] }} - {{ gigs['past-gigs'][gig]['location'] }}</p>
                                 </div>
 
-                                <h3 class="only-desktop">{{ gig }}</h3>
+                                <h3 class="only-desktop">{{ gigs['past-gigs'][gig]['venue'] }}</h3>
                                 <p class="only-desktop">{{ gigs['past-gigs'][gig]['date'] }}</p>
                                 <p class="only-desktop">{{ gigs['past-gigs'][gig]['location'] }}</p>
                             </div>
