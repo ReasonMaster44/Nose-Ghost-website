@@ -19,3 +19,11 @@
     align-items: center;
     flex-direction: column;
 }
+
+#videos-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10%;
+}

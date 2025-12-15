@@ -51,4 +51,15 @@ document.addEventListener("DOMContentLoaded", () => {
             parent.classList.toggle("active");
         });
     }
+
+    const videos_nav_container = document.getElementById("videos-nav");
+    const videos_nav_items = videos_nav_container.querySelectorAll(".nav-item");
+
+    videos_nav_items.forEach(item => {
+        item.addEventListener("click", () => {
+            videos_nav_items.forEach(i => i.classList.remove("selected"));
+            item.classList.add("selected");
+            console.log("Click");
+        });
+    });
 });
