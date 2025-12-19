@@ -13,7 +13,7 @@
     margin: 30px;
 }
 
-#yt-embed-container {
+.yt-embed-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +24,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 10%;
 }
