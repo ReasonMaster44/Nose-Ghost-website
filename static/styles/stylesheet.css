@@ -18,11 +18,23 @@ hr {
 }
 
 :root {
+    /*
     --main: #ede5e3;
     --off: #a8a2a0;
     --bg: #161618;
     --pop1: #262b45;
     --pop2: #d14242;
+    */
+
+    --main: #d9a5cc;
+    --off: #906786;
+    --bg: #11010d;
+    --pop1: #b08daf;
+
+    
+    --pop2: #d14242;
+
+
     --ham-menu-height: 35px;
     --ham-menu-width: 50px;
 
